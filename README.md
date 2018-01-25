@@ -1,9 +1,10 @@
 # airStatus_REST_API
-airStatus RESTful API using Python / Django rest framework
+airStatus RESTful API ٩(ˊᗜˋ*)و
 
 Development environment 
 ------------------------
-* Windows10 / Visual Studio Code
+* Windows10 
+* Visual Studio Code (◕‿◕✿)
 * Python 
 * Django rest Framework 
 
