@@ -45,10 +45,12 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'rest_auth.registration',
+    'knox',
+  
 ]
 SITE_ID = 1
 
-AUTH_USER_MODEL = 'airstatusapp.Person'
+#AUTH_USER_MODEL = 'airstatusapp.Person'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -128,6 +130,8 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
+        'knox.auth.TokenAuthentication',
+       
     )
 }
 
@@ -138,4 +142,10 @@ REST_FRAMEWORK = {
 STATIC_URL = '/static/'
 
 LOGIN_REDIRECT_URL = 'http://127.0.0.1:8000/'
+
+LOG_FILE = os.path.join(os.path.dirname(__file__), '..', 'myLog.log') 
+
+LOGGING = { 'version': 1, 'disable_existing_loggers': False, 'formatters': { 'verbose': { 'format' : "[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s] %(message)s", 'datefmt' : "%d/%b/%Y %H:%M:%S" }, 'simple': { 'format': '%(levelname)s %(message)s' }, }, 'handlers': { 'file': { 'level': 'DEBUG', 'class': 'logging.handlers.RotatingFileHandler', 'filename': LOG_FILE, 'formatter': 'verbose', 'maxBytes':1024*1024*10, 'backupCount':5, }, }, 'loggers': { 'django': { 'handlers':['file'], 'propagate': True, 'level':'INFO', }, 'django.request': { 'handlers':['file'], 'propagate': False, 'level':'INFO', }, 'myAppName': { 'handlers': ['file'], 'level': 'DEBUG', }, } }
+
+
 
