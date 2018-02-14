@@ -1812,3 +1812,584 @@ ConnectionRefusedError: [WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연�
 [13/Feb/2018 16:25:51] INFO [django.server:124] "GET /rest-auth/user/ HTTP/1.1" 200 9867
 [13/Feb/2018 16:25:55] WARNING [django.request:152] Not Found: /rest-auth/user/jiyeono
 [13/Feb/2018 16:25:55] WARNING [django.server:124] "GET /rest-auth/user/jiyeono HTTP/1.1" 404 4395
+[14/Feb/2018 11:53:19] INFO [django.server:124] "GET / HTTP/1.1" 200 5178
+[14/Feb/2018 11:53:19] INFO [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+[14/Feb/2018 11:53:19] INFO [django.server:124] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+[14/Feb/2018 11:53:19] INFO [django.server:124] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+[14/Feb/2018 11:53:19] INFO [django.server:124] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+[14/Feb/2018 11:53:19] INFO [django.server:124] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+[14/Feb/2018 11:53:19] INFO [django.server:124] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+[14/Feb/2018 11:53:19] INFO [django.server:124] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+[14/Feb/2018 11:53:20] INFO [django.server:124] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+[14/Feb/2018 11:53:20] INFO [django.server:124] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[14/Feb/2018 11:53:20] INFO [django.server:124] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1262
+[14/Feb/2018 11:53:20] INFO [django.server:124] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+[14/Feb/2018 11:53:20] WARNING [django.request:152] Not Found: /favicon.ico
+[14/Feb/2018 11:53:20] WARNING [django.server:124] "GET /favicon.ico HTTP/1.1" 404 3283
+[14/Feb/2018 11:53:23] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 9159
+[14/Feb/2018 11:53:34] WARNING [django.server:124] "GET /rest-auth/login/ HTTP/1.1" 405 8009
+[14/Feb/2018 11:53:43] WARNING [django.server:124] "POST /rest-auth/login/ HTTP/1.1" 400 8095
+[14/Feb/2018 11:53:48] WARNING [django.server:124] "POST /rest-auth/login/ HTTP/1.1" 400 8095
+[14/Feb/2018 11:53:54] WARNING [django.server:124] "GET /rest-auth/registration/ HTTP/1.1" 405 8027
+[14/Feb/2018 11:54:06] ERROR [django.request:135] Internal Server Error: /rest-auth/registration/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\utils\decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\utils\decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_auth\registration\views.py", line 46, in dispatch
+    return super(RegisterView, self).dispatch(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_auth\registration\views.py", line 65, in create
+    user = self.perform_create(serializer)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_auth\registration\views.py", line 81, in perform_create
+    None)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\utils.py", line 183, in complete_signup
+    signal_kwargs=signal_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\utils.py", line 143, in perform_login
+    send_email_confirmation(request, user, signup=signup)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\utils.py", line 314, in send_email_confirmation
+    signup=signup)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\models.py", line 60, in send_confirmation
+    confirmation.send(request, signup=signup)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\models.py", line 166, in send
+    get_adapter(request).send_confirmation_mail(request, self, signup)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\adapter.py", line 444, in send_confirmation_mail
+    ctx)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\adapter.py", line 137, in send_mail
+    msg.send()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\mail\message.py", line 348, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\mail\backends\smtp.py", line 104, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\mail\backends\smtp.py", line 64, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\socket.py", line 724, in create_connection
+    raise err
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\socket.py", line 713, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다
+[14/Feb/2018 11:54:06] ERROR [django.server:124] "POST /rest-auth/registration/ HTTP/1.1" 500 192878
+[14/Feb/2018 11:54:27] WARNING [django.server:124] "POST /rest-auth/registration/ HTTP/1.1" 400 8459
+[14/Feb/2018 11:54:44] WARNING [django.server:124] "GET /rest-auth/login/ HTTP/1.1" 405 8009
+[14/Feb/2018 11:54:51] WARNING [django.server:124] "POST /rest-auth/login/ HTTP/1.1" 400 8096
+[14/Feb/2018 11:55:01] WARNING [django.server:124] "GET /rest-auth/registration/ HTTP/1.1" 405 8027
+[14/Feb/2018 11:55:17] ERROR [django.request:135] Internal Server Error: /rest-auth/registration/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\utils\decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\utils\decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_auth\registration\views.py", line 46, in dispatch
+    return super(RegisterView, self).dispatch(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_auth\registration\views.py", line 65, in create
+    user = self.perform_create(serializer)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_auth\registration\views.py", line 81, in perform_create
+    None)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\utils.py", line 183, in complete_signup
+    signal_kwargs=signal_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\utils.py", line 143, in perform_login
+    send_email_confirmation(request, user, signup=signup)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\utils.py", line 314, in send_email_confirmation
+    signup=signup)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\models.py", line 60, in send_confirmation
+    confirmation.send(request, signup=signup)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\models.py", line 166, in send
+    get_adapter(request).send_confirmation_mail(request, self, signup)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\adapter.py", line 444, in send_confirmation_mail
+    ctx)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\adapter.py", line 137, in send_mail
+    msg.send()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\mail\message.py", line 348, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\mail\backends\smtp.py", line 104, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\mail\backends\smtp.py", line 64, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\socket.py", line 724, in create_connection
+    raise err
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\socket.py", line 713, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다
+[14/Feb/2018 11:55:17] ERROR [django.server:124] "POST /rest-auth/registration/ HTTP/1.1" 500 192907
+[14/Feb/2018 11:55:18] WARNING [django.server:124] "POST /rest-auth/registration/ HTTP/1.1" 400 8466
+[14/Feb/2018 11:55:28] WARNING [django.server:124] "GET /rest-auth/login/ HTTP/1.1" 405 8009
+[14/Feb/2018 11:55:49] INFO [django.server:124] "POST /rest-auth/login/ HTTP/1.1" 200 7602
+[14/Feb/2018 11:56:03] WARNING [django.request:152] Not Found: /device/
+[14/Feb/2018 11:56:03] WARNING [django.server:124] "GET /device/ HTTP/1.1" 404 3271
+[14/Feb/2018 11:56:07] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 9198
+[14/Feb/2018 11:56:30] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9472
+[14/Feb/2018 11:56:38] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 9420
+[14/Feb/2018 11:56:39] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 9420
+[14/Feb/2018 11:59:46] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 9420
+[14/Feb/2018 11:59:48] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 9420
+[14/Feb/2018 11:59:57] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9412
+[14/Feb/2018 11:59:59] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 9612
+[14/Feb/2018 12:17:09] INFO [django.server:124] "GET /rest-auth/user/ HTTP/1.1" 200 9888
+[14/Feb/2018 12:17:19] INFO [django.server:124] "GET /devices HTTP/1.1" 301 0
+[14/Feb/2018 12:17:20] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 9612
+[14/Feb/2018 12:17:24] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9420
+[14/Feb/2018 12:25:19] INFO [django.server:124] "GET / HTTP/1.1" 200 5217
+[14/Feb/2018 12:25:25] WARNING [django.server:124] "GET /accounts/login/ HTTP/1.1" 405 8043
+[14/Feb/2018 12:26:13] WARNING [django.request:152] Not Found: /accounts/signup/
+[14/Feb/2018 12:26:13] WARNING [django.server:124] "GET /accounts/signup/ HTTP/1.1" 404 3288
+[14/Feb/2018 12:26:16] WARNING [django.request:152] Not Found: /accounts/signup/
+[14/Feb/2018 12:26:16] WARNING [django.server:124] "GET /accounts/signup/ HTTP/1.1" 404 3288
+[14/Feb/2018 12:26:32] WARNING [django.request:152] Not Found: /accounts/registration/
+[14/Feb/2018 12:26:32] WARNING [django.server:124] "GET /accounts/registration/ HTTP/1.1" 404 3312
+[14/Feb/2018 12:26:56] WARNING [django.request:152] Not Found: /accounts/registration/
+[14/Feb/2018 12:26:56] WARNING [django.server:124] "GET /accounts/registration/ HTTP/1.1" 404 3312
+[14/Feb/2018 12:27:06] WARNING [django.server:124] "GET /account/registration/ HTTP/1.1" 405 8056
+[14/Feb/2018 12:27:25] INFO [django.server:124] "GET /account/signup HTTP/1.1" 301 0
+[14/Feb/2018 12:27:25] WARNING [django.server:124] "GET /account/signup/ HTTP/1.1" 405 8026
+[14/Feb/2018 12:35:42] INFO [django.server:124] "GET / HTTP/1.1" 200 5217
+[14/Feb/2018 12:35:44] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 9808
+[14/Feb/2018 12:35:50] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9484
+[14/Feb/2018 12:36:12] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 10036
+[14/Feb/2018 12:36:25] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9472
+[14/Feb/2018 12:36:53] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 10258
+[14/Feb/2018 12:36:58] ERROR [django.request:135] Internal Server Error: /devices/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\viewsets.py", line 95, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airstatusproject\airstatusapp\views.py", line 21, in perform_create
+    serializer.save(dkey = self.uuid.uuid1)
+AttributeError: 'DeviceViewSet' object has no attribute 'uuid'
+[14/Feb/2018 12:36:58] ERROR [django.server:124] "POST /devices/ HTTP/1.1" 500 102844
+[14/Feb/2018 12:37:08] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9472
+[14/Feb/2018 12:37:17] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 10676
+[14/Feb/2018 12:37:42] ERROR [django.request:135] Internal Server Error: /devices/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\viewsets.py", line 95, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airstatusproject\airstatusapp\views.py", line 21, in perform_create
+    serializer.save(downer = self.request.user)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\serializers.py", line 958, in update
+    instance.save()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\base.py", line 808, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\base.py", line 838, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\base.py", line 905, in _save_table
+    forced_update)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\base.py", line 955, in _do_update
+    return filtered._update(values) > 0
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\query.py", line 664, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\sql\compiler.py", line 1204, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\sql\compiler.py", line 876, in execute_sql
+    sql, params = self.as_sql()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\sql\compiler.py", line 1167, in as_sql
+    % (field, val, field.__class__.__name__)
+TypeError: Tried to update field airstatusapp.Device.downer with a model instance, <SimpleLazyObject: <User: jiyeontest>>. Use a value compatible with CharField.
+[14/Feb/2018 12:37:42] ERROR [django.server:124] "POST /devices/ HTTP/1.1" 500 153839
+[14/Feb/2018 12:38:09] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 10898
+[14/Feb/2018 12:38:22] ERROR [django.request:135] Internal Server Error: /devices/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\viewsets.py", line 95, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airstatusproject\airstatusapp\views.py", line 21, in perform_create
+    serializer.save(downer = self.request.user)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\serializers.py", line 958, in update
+    instance.save()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\base.py", line 808, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\base.py", line 838, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\base.py", line 905, in _save_table
+    forced_update)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\base.py", line 955, in _do_update
+    return filtered._update(values) > 0
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\query.py", line 664, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\sql\compiler.py", line 1204, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\sql\compiler.py", line 876, in execute_sql
+    sql, params = self.as_sql()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\sql\compiler.py", line 1167, in as_sql
+    % (field, val, field.__class__.__name__)
+TypeError: Tried to update field airstatusapp.Device.downer with a model instance, <SimpleLazyObject: <User: jiyeontest>>. Use a value compatible with CharField.
+[14/Feb/2018 12:38:22] ERROR [django.server:124] "POST /devices/ HTTP/1.1" 500 154271
+[14/Feb/2018 14:43:09] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 11148
+[14/Feb/2018 14:43:16] ERROR [django.request:135] Internal Server Error: /devices/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\viewsets.py", line 95, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airstatusproject\airstatusapp\views.py", line 20, in perform_create
+    setattr(Deice, 'dkey', uuid.uuid1)
+NameError: name 'Deice' is not defined
+[14/Feb/2018 14:43:16] ERROR [django.server:124] "POST /devices/ HTTP/1.1" 500 102904
+[14/Feb/2018 14:43:26] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9420
+[14/Feb/2018 14:43:35] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9432
+[14/Feb/2018 14:43:37] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 11546
+[14/Feb/2018 14:43:51] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9424
+[14/Feb/2018 14:52:48] INFO [django.server:124] "GET / HTTP/1.1" 200 5217
+[14/Feb/2018 14:52:52] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 11744
+[14/Feb/2018 14:52:58] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9426
+[14/Feb/2018 14:54:45] INFO [django.server:124] "GET / HTTP/1.1" 200 5217
+[14/Feb/2018 14:54:49] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 11943
+[14/Feb/2018 14:54:55] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9438
+[14/Feb/2018 14:55:41] ERROR [django.request:135] Internal Server Error: /devices/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\viewsets.py", line 95, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airstatusproject\airstatusapp\views.py", line 21, in perform_create
+    serializer.save(downer = self.request.user)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\serializers.py", line 958, in update
+    instance.save()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\base.py", line 808, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\base.py", line 838, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\base.py", line 905, in _save_table
+    forced_update)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\base.py", line 955, in _do_update
+    return filtered._update(values) > 0
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\query.py", line 664, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\sql\compiler.py", line 1204, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\sql\compiler.py", line 876, in execute_sql
+    sql, params = self.as_sql()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\sql\compiler.py", line 1167, in as_sql
+    % (field, val, field.__class__.__name__)
+TypeError: Tried to update field airstatusapp.Device.downer with a model instance, <SimpleLazyObject: <User: jiyeontest>>. Use a value compatible with CharField.
+[14/Feb/2018 14:55:41] ERROR [django.server:124] "POST /devices/ HTTP/1.1" 500 154414
+[14/Feb/2018 15:00:33] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 12384
+[14/Feb/2018 15:00:42] ERROR [django.request:135] Internal Server Error: /devices/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\viewsets.py", line 95, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airstatusproject\airstatusapp\views.py", line 21, in perform_create
+    serializer.save(downer = self.user)
+AttributeError: 'DeviceViewSet' object has no attribute 'user'
+[14/Feb/2018 15:00:42] ERROR [django.server:124] "POST /devices/ HTTP/1.1" 500 102967
+[14/Feb/2018 15:00:48] ERROR [django.request:135] Internal Server Error: /devices/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\viewsets.py", line 95, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airstatusproject\airstatusapp\views.py", line 21, in perform_create
+    serializer.save(downer = self.user)
+AttributeError: 'DeviceViewSet' object has no attribute 'user'
+[14/Feb/2018 15:00:48] ERROR [django.server:124] "POST /devices/ HTTP/1.1" 500 102967
+[14/Feb/2018 15:00:50] ERROR [django.request:135] Internal Server Error: /devices/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\viewsets.py", line 95, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airstatusproject\airstatusapp\views.py", line 21, in perform_create
+    serializer.save(downer = self.user)
+AttributeError: 'DeviceViewSet' object has no attribute 'user'
+[14/Feb/2018 15:00:50] ERROR [django.server:124] "POST /devices/ HTTP/1.1" 500 102967
+[14/Feb/2018 15:00:51] ERROR [django.request:135] Internal Server Error: /devices/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\viewsets.py", line 95, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airstatusproject\airstatusapp\views.py", line 21, in perform_create
+    serializer.save(downer = self.user)
+AttributeError: 'DeviceViewSet' object has no attribute 'user'
+[14/Feb/2018 15:00:51] ERROR [django.server:124] "POST /devices/ HTTP/1.1" 500 102967
+[14/Feb/2018 15:01:13] ERROR [django.request:135] Internal Server Error: /devices/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\viewsets.py", line 95, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airstatusproject\airstatusapp\views.py", line 21, in perform_create
+    serializer.save(downer = self.request.user)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\serializers.py", line 958, in update
+    instance.save()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\base.py", line 808, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\base.py", line 838, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\base.py", line 905, in _save_table
+    forced_update)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\base.py", line 955, in _do_update
+    return filtered._update(values) > 0
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\query.py", line 664, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\sql\compiler.py", line 1204, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\sql\compiler.py", line 876, in execute_sql
+    sql, params = self.as_sql()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\sql\compiler.py", line 1167, in as_sql
+    % (field, val, field.__class__.__name__)
+TypeError: Tried to update field airstatusapp.Device.downer with a model instance, <SimpleLazyObject: <User: jiyeontest>>. Use a value compatible with CharField.
+[14/Feb/2018 15:01:13] ERROR [django.server:124] "POST /devices/ HTTP/1.1" 500 154661
+[14/Feb/2018 15:03:41] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 13524
+[14/Feb/2018 15:03:49] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9426
+[14/Feb/2018 15:04:16] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9426
+[14/Feb/2018 15:04:18] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9426
+[14/Feb/2018 15:04:24] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9420
+[14/Feb/2018 15:08:22] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 14317
+[14/Feb/2018 15:08:28] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9480
+[14/Feb/2018 15:09:28] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9480
+[14/Feb/2018 15:09:47] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9450
+[14/Feb/2018 15:09:52] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 14980
+[14/Feb/2018 15:10:34] INFO [django.server:124] "GET / HTTP/1.1" 200 5217
+[14/Feb/2018 15:10:36] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 14980
+[14/Feb/2018 15:10:42] ERROR [django.request:135] Internal Server Error: /devices/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\viewsets.py", line 95, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airstatusproject\airstatusapp\views.py", line 21, in perform_create
+    serializer.save(downer = self.request.user)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\serializers.py", line 958, in update
+    instance.save()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\base.py", line 808, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\base.py", line 838, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\base.py", line 905, in _save_table
+    forced_update)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\base.py", line 955, in _do_update
+    return filtered._update(values) > 0
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\query.py", line 664, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\sql\compiler.py", line 1204, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\sql\compiler.py", line 876, in execute_sql
+    sql, params = self.as_sql()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\db\models\sql\compiler.py", line 1167, in as_sql
+    % (field, val, field.__class__.__name__)
+TypeError: Tried to update field airstatusapp.Device.downer with a model instance, <SimpleLazyObject: <User: jiyeontest>>. Use a value compatible with CharField.
+[14/Feb/2018 15:10:42] ERROR [django.server:124] "POST /devices/ HTTP/1.1" 500 154185
+[14/Feb/2018 15:11:02] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9414
+[14/Feb/2018 15:11:04] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9414
+[14/Feb/2018 15:11:10] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9420

@@ -15,7 +15,9 @@ class DeviceSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         
         model = Device 
-        fields = ('dname','dlocation','dkey')
+        fields = ('dname','dlocation','dkey','downer')
+        setattr(Device, 'downer', User.username)
+        print(getattr(Device,'downer'))
         #setattr(Device, 'dkey', 'testktey')
 
 

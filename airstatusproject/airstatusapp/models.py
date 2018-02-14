@@ -22,6 +22,7 @@ class Device(models.Model):
     dname = models.CharField(max_length=30)
     dlocation = models.CharField(max_length=30)
     dkey = models.CharField(max_length=30)
+    downer = models.CharField(max_length=30)
 
 
 

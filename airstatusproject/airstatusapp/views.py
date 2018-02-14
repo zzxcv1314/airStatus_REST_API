@@ -4,16 +4,18 @@ from .models import Person
 from .models import Device
 from rest_framework import viewsets
 from .serializers import DeviceSerializer
+import uuid 
 #from .serializers import PersonSerializer
 #from .serializers import DeviceSerializer
 
 # Create your views here.
+
 
 class DeviceViewSet(viewsets.ModelViewSet):
     
     #setattr(Device, 'dkey', 'testkey')
     queryset = Device.objects.all()
     serializer_class = DeviceSerializer
-
-    
-
+    def perform_create(self, serializer):
+        #serializer.save(dkey = 'abcd')
+        serializer.save(downer = str(self.request.user))
