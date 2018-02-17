@@ -21,8 +21,14 @@ class Person(User):
 class Device(models.Model):
     dname = models.CharField(max_length=30)
     dlocation = models.CharField(max_length=30)
-    dkey = models.CharField(max_length=30)
+    dkey = models.CharField(max_length=30,unique=True)
     downer = models.CharField(max_length=30)
+
+class airstatus(models.Model):
+    pm25 = models.IntegerField()
+    pm10 = models.IntegerField()
+    temperature = models.IntegerField()
+
 
 
 

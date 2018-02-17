@@ -2393,3 +2393,651 @@ TypeError: Tried to update field airstatusapp.Device.downer with a model instanc
 [14/Feb/2018 15:11:02] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9414
 [14/Feb/2018 15:11:04] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9414
 [14/Feb/2018 15:11:10] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9420
+[16/Feb/2018 00:12:47] INFO [django.server:124] "GET / HTTP/1.1" 200 5217
+[16/Feb/2018 00:12:48] INFO [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[16/Feb/2018 00:12:48] INFO [django.server:124] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[16/Feb/2018 00:12:48] INFO [django.server:124] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[16/Feb/2018 00:12:48] INFO [django.server:124] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[16/Feb/2018 00:12:48] INFO [django.server:124] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[16/Feb/2018 00:12:48] INFO [django.server:124] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[16/Feb/2018 00:12:48] INFO [django.server:124] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[16/Feb/2018 00:12:48] INFO [django.server:124] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[16/Feb/2018 00:12:48] INFO [django.server:124] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[16/Feb/2018 00:12:48] INFO [django.server:124] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[16/Feb/2018 00:12:48] INFO [django.server:124] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+[16/Feb/2018 00:12:49] WARNING [django.request:152] Not Found: /favicon.ico
+[16/Feb/2018 00:12:49] WARNING [django.server:124] "GET /favicon.ico HTTP/1.1" 404 3273
+[16/Feb/2018 00:13:10] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 15749
+[16/Feb/2018 00:13:23] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9450
+[16/Feb/2018 00:16:27] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9417
+[16/Feb/2018 00:16:31] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 9373
+[16/Feb/2018 00:16:43] WARNING [django.server:124] "POST /devices/ HTTP/1.1" 400 9424
+[16/Feb/2018 22:02:28] INFO [django.server:124] "GET / HTTP/1.1" 200 5178
+[16/Feb/2018 22:02:28] INFO [django.server:124] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+[16/Feb/2018 22:02:30] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 9373
+[16/Feb/2018 22:02:43] INFO [django.server:124] "GET /devices HTTP/1.1" 301 0
+[16/Feb/2018 22:02:43] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 9373
+[16/Feb/2018 22:02:45] WARNING [django.request:152] Not Found: /rest-auth/login/
+[16/Feb/2018 22:02:45] WARNING [django.server:124] "GET /rest-auth/login/ HTTP/1.1" 404 3288
+[16/Feb/2018 22:02:50] WARNING [django.server:124] "GET /account/login/ HTTP/1.1" 405 7999
+[16/Feb/2018 22:02:53] WARNING [django.request:152] Not Found: /accounts/login/
+[16/Feb/2018 22:02:53] WARNING [django.server:124] "GET /accounts/login/ HTTP/1.1" 404 3285
+[16/Feb/2018 22:03:07] WARNING [django.request:152] Not Found: /account/registration/
+[16/Feb/2018 22:03:07] WARNING [django.server:124] "GET /account/registration/ HTTP/1.1" 404 4372
+[16/Feb/2018 22:03:11] WARNING [django.request:152] Not Found: /accounts/registration/
+[16/Feb/2018 22:03:11] WARNING [django.server:124] "GET /accounts/registration/ HTTP/1.1" 404 3306
+[16/Feb/2018 22:03:24] WARNING [django.server:124] "GET /account/signup/ HTTP/1.1" 405 7987
+[16/Feb/2018 22:03:40] WARNING [django.server:124] "POST /account/signup/ HTTP/1.1" 400 8416
+[16/Feb/2018 22:03:40] ERROR [django.request:135] Internal Server Error: /account/signup/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\utils\decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\utils\decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_auth\registration\views.py", line 46, in dispatch
+    return super(RegisterView, self).dispatch(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_auth\registration\views.py", line 65, in create
+    user = self.perform_create(serializer)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_auth\registration\views.py", line 81, in perform_create
+    None)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\utils.py", line 183, in complete_signup
+    signal_kwargs=signal_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\utils.py", line 143, in perform_login
+    send_email_confirmation(request, user, signup=signup)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\utils.py", line 314, in send_email_confirmation
+    signup=signup)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\models.py", line 60, in send_confirmation
+    confirmation.send(request, signup=signup)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\models.py", line 166, in send
+    get_adapter(request).send_confirmation_mail(request, self, signup)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\adapter.py", line 444, in send_confirmation_mail
+    ctx)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\adapter.py", line 137, in send_mail
+    msg.send()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\mail\message.py", line 348, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\mail\backends\smtp.py", line 104, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\mail\backends\smtp.py", line 64, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\socket.py", line 724, in create_connection
+    raise err
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\socket.py", line 713, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다
+[16/Feb/2018 22:03:40] ERROR [django.server:124] "POST /account/signup/ HTTP/1.1" 500 191248
+[16/Feb/2018 22:03:40] ERROR [django.server:124] "POST /account/signup/ HTTP/1.1" 500 59
+[16/Feb/2018 22:03:51] WARNING [django.server:124] "GET /account/login/ HTTP/1.1" 405 7999
+[16/Feb/2018 22:04:00] INFO [django.server:124] "POST /account/login/ HTTP/1.1" 200 7588
+[16/Feb/2018 22:04:16] INFO [django.server:124] "GET / HTTP/1.1" 200 5213
+[16/Feb/2018 22:04:17] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 9408
+[16/Feb/2018 22:04:29] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9432
+[16/Feb/2018 22:04:38] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9456
+[16/Feb/2018 22:05:58] WARNING [django.server:124] "POST /devices/ HTTP/1.1" 400 9471
+[16/Feb/2018 22:06:06] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 9828
+[16/Feb/2018 22:10:05] INFO [django.server:124] "GET /devices/jiyeontest HTTP/1.1" 301 0
+[16/Feb/2018 22:10:05] WARNING [django.request:152] Not Found: /devices/jiyeontest/
+[16/Feb/2018 22:10:05] WARNING [django.server:124] "GET /devices/jiyeontest/ HTTP/1.1" 404 10647
+[16/Feb/2018 22:10:10] WARNING [django.request:152] Not Found: /devices/jiyeon/
+[16/Feb/2018 22:10:10] WARNING [django.server:124] "GET /devices/jiyeon/ HTTP/1.1" 404 10611
+[16/Feb/2018 22:10:19] INFO [django.server:124] "GET /devices/test111 HTTP/1.1" 301 0
+[16/Feb/2018 22:10:19] WARNING [django.request:152] Not Found: /devices/test111/
+[16/Feb/2018 22:10:19] WARNING [django.server:124] "GET /devices/test111/ HTTP/1.1" 404 10620
+[16/Feb/2018 22:10:30] INFO [django.server:124] "GET /devices/1/ HTTP/1.1" 200 10797
+[16/Feb/2018 22:39:28] INFO [django.server:124] "OPTIONS /devices/1/ HTTP/1.1" 200 12111
+[16/Feb/2018 22:47:45] INFO [django.server:124] "GET /devices/1/ HTTP/1.1" 200 10797
+[16/Feb/2018 22:47:45] INFO [django.server:124] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[16/Feb/2018 22:47:45] INFO [django.server:124] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[16/Feb/2018 22:47:45] INFO [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[16/Feb/2018 22:47:45] INFO [django.server:124] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[16/Feb/2018 22:47:45] INFO [django.server:124] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[16/Feb/2018 22:47:45] INFO [django.server:124] "GET /static/rest_framework/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+[16/Feb/2018 22:47:45] INFO [django.server:124] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[16/Feb/2018 22:47:45] INFO [django.server:124] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[16/Feb/2018 22:47:45] INFO [django.server:124] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[16/Feb/2018 22:47:45] INFO [django.server:124] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[16/Feb/2018 22:47:46] INFO [django.server:124] "GET /devices/1/ HTTP/1.1" 200 10797
+[16/Feb/2018 22:47:56] INFO [django.server:124] "OPTIONS /devices/1/ HTTP/1.1" 200 12111
+[16/Feb/2018 22:47:57] INFO [django.server:124] "OPTIONS /devices/1/ HTTP/1.1" 200 12111
+[16/Feb/2018 22:48:26] INFO [django.server:124] "GET /devices/1/?format=json HTTP/1.1" 200 83
+[16/Feb/2018 22:48:39] INFO [django.server:124] "GET /devices/1/?format=api HTTP/1.1" 200 10896
+[16/Feb/2018 22:48:42] INFO [django.server:124] "GET /devices/1/?format=json HTTP/1.1" 200 83
+[16/Feb/2018 22:49:07] INFO [django.server:124] "GET /devices/1/?format=api HTTP/1.1" 200 10896
+[16/Feb/2018 22:49:08] INFO [django.server:124] "GET /devices/1/?format=api HTTP/1.1" 200 10896
+[16/Feb/2018 22:49:09] INFO [django.server:124] "GET /devices/1/?format=api HTTP/1.1" 200 10896
+[16/Feb/2018 22:49:09] INFO [django.server:124] "GET /devices/1/?format=api HTTP/1.1" 200 10896
+[16/Feb/2018 22:49:12] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[16/Feb/2018 22:49:18] INFO [django.server:124] "GET /devices/1/?format=api HTTP/1.1" 200 10896
+[16/Feb/2018 22:49:18] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[16/Feb/2018 22:49:21] INFO [django.server:124] "GET /devices/1/?format=api HTTP/1.1" 200 10896
+[16/Feb/2018 22:49:21] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[16/Feb/2018 22:49:22] INFO [django.server:124] "GET /devices/1/?format=api HTTP/1.1" 200 10896
+[16/Feb/2018 22:49:22] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[16/Feb/2018 22:49:24] INFO [django.server:124] "GET /devices/1/?format=api HTTP/1.1" 200 10896
+[16/Feb/2018 22:49:24] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[16/Feb/2018 22:49:27] INFO [django.server:124] "GET /devices/1/?format=api HTTP/1.1" 200 10896
+[16/Feb/2018 22:49:27] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[16/Feb/2018 22:49:30] INFO [django.server:124] "GET /devices/1/ HTTP/1.1" 200 10797
+[16/Feb/2018 22:49:30] INFO [django.server:124] "GET /devices HTTP/1.1" 301 0
+[16/Feb/2018 22:49:30] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 9828
+[16/Feb/2018 22:49:31] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[16/Feb/2018 22:50:23] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[16/Feb/2018 22:55:16] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 9828
+[16/Feb/2018 22:55:25] INFO [django.server:124] "GET /devices?dname=test111 HTTP/1.1" 301 0
+[16/Feb/2018 22:55:25] INFO [django.server:124] "GET /devices/?dname=test111 HTTP/1.1" 200 9934
+[16/Feb/2018 22:55:25] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[16/Feb/2018 22:55:33] INFO [django.server:124] "GET /devices/?dname=test111 HTTP/1.1" 200 9934
+[16/Feb/2018 22:55:33] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[16/Feb/2018 22:55:39] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[16/Feb/2018 22:55:45] INFO [django.server:124] "GET /devices/?dname=test111 HTTP/1.1" 200 9934
+[16/Feb/2018 22:55:45] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[16/Feb/2018 22:55:52] INFO [django.server:124] "GET /devices/?dname=jiyeon HTTP/1.1" 200 9927
+[16/Feb/2018 22:55:53] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[16/Feb/2018 23:13:02] INFO [django.server:124] "GET /devices/?Dname=jiyeon HTTP/1.1" 200 9927
+[16/Feb/2018 23:13:02] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[16/Feb/2018 23:13:09] INFO [django.server:124] "GET /devices/Dname=jiyeon HTTP/1.1" 301 0
+[16/Feb/2018 23:13:09] WARNING [django.request:152] Not Found: /devices/Dname=jiyeon/
+[16/Feb/2018 23:13:09] WARNING [django.server:124] "GET /devices/Dname%3Djiyeon/ HTTP/1.1" 404 10681
+[16/Feb/2018 23:13:09] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[16/Feb/2018 23:13:21] WARNING [django.request:152] Not Found: /devices/Dname=jiyeon/
+[16/Feb/2018 23:13:21] WARNING [django.server:124] "GET /devices/Dname=jiyeon/ HTTP/1.1" 404 10681
+[16/Feb/2018 23:13:22] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[16/Feb/2018 23:14:40] INFO [django.server:124] "GET /devices/?dname=test111 HTTP/1.1" 200 9934
+[16/Feb/2018 23:14:40] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[16/Feb/2018 23:14:47] INFO [django.server:124] "GET /devices/?dname=test111 HTTP/1.1" 200 9934
+[16/Feb/2018 23:14:48] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[16/Feb/2018 23:14:52] INFO [django.server:124] "GET /devices/?dname=test111 HTTP/1.1" 200 9934
+[16/Feb/2018 23:14:53] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[16/Feb/2018 23:14:59] INFO [django.server:124] "GET /devices/?dname=test111 HTTP/1.1" 200 9934
+[16/Feb/2018 23:15:00] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[16/Feb/2018 23:20:55] ERROR [django.request:135] Internal Server Error: /devices/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\viewsets.py", line 95, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\mixins.py", line 40, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\generics.py", line 152, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\rest_framework\backends.py", line 51, in filter_queryset
+    filter_class = self.get_filter_class(view, queryset)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\rest_framework\backends.py", line 41, in get_filter_class
+    class AutoFilterSet(self.default_filter_set):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\filterset.py", line 90, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\filterset.py", line 335, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: d, n, a, m, e
+[16/Feb/2018 23:20:56] ERROR [django.server:124] "GET /devices/?dname=test111 HTTP/1.1" 500 120441
+[16/Feb/2018 23:21:26] ERROR [django.request:135] Internal Server Error: /devices/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\viewsets.py", line 95, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\mixins.py", line 40, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\generics.py", line 152, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\rest_framework\backends.py", line 51, in filter_queryset
+    filter_class = self.get_filter_class(view, queryset)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\rest_framework\backends.py", line 41, in get_filter_class
+    class AutoFilterSet(self.default_filter_set):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\filterset.py", line 90, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\filterset.py", line 335, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: d, n, a, m, e
+[16/Feb/2018 23:21:26] ERROR [django.server:124] "GET /devices/?dname=test111 HTTP/1.1" 500 120306
+[16/Feb/2018 23:21:32] ERROR [django.request:135] Internal Server Error: /devices/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\viewsets.py", line 95, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\mixins.py", line 40, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\generics.py", line 152, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\rest_framework\backends.py", line 51, in filter_queryset
+    filter_class = self.get_filter_class(view, queryset)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\rest_framework\backends.py", line 41, in get_filter_class
+    class AutoFilterSet(self.default_filter_set):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\filterset.py", line 90, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\filterset.py", line 335, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: d, n, a, m, e
+[16/Feb/2018 23:21:32] ERROR [django.server:124] "GET /devices/?dname=test111 HTTP/1.1" 500 120441
+[16/Feb/2018 23:23:06] ERROR [django.request:135] Internal Server Error: /devices/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\viewsets.py", line 95, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\mixins.py", line 40, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\generics.py", line 152, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\rest_framework\backends.py", line 51, in filter_queryset
+    filter_class = self.get_filter_class(view, queryset)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\rest_framework\backends.py", line 41, in get_filter_class
+    class AutoFilterSet(self.default_filter_set):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\filterset.py", line 90, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\filterset.py", line 335, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: d, n, a, m, e
+[16/Feb/2018 23:23:06] ERROR [django.server:124] "GET /devices/?dname=test111 HTTP/1.1" 500 120441
+[16/Feb/2018 23:23:09] ERROR [django.request:135] Internal Server Error: /devices/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\viewsets.py", line 95, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\mixins.py", line 40, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\generics.py", line 152, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\rest_framework\backends.py", line 51, in filter_queryset
+    filter_class = self.get_filter_class(view, queryset)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\rest_framework\backends.py", line 41, in get_filter_class
+    class AutoFilterSet(self.default_filter_set):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\filterset.py", line 90, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\filterset.py", line 335, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: d, n, a, m, e
+[16/Feb/2018 23:23:09] ERROR [django.server:124] "GET /devices/?dname=test111 HTTP/1.1" 500 120441
+[16/Feb/2018 23:23:12] ERROR [django.request:135] Internal Server Error: /devices/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\viewsets.py", line 95, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\mixins.py", line 40, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\generics.py", line 152, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\rest_framework\backends.py", line 51, in filter_queryset
+    filter_class = self.get_filter_class(view, queryset)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\rest_framework\backends.py", line 41, in get_filter_class
+    class AutoFilterSet(self.default_filter_set):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\filterset.py", line 90, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\filterset.py", line 335, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: d, n, a, m, e
+[16/Feb/2018 23:23:13] ERROR [django.server:124] "GET /devices/ HTTP/1.1" 500 119904
+[16/Feb/2018 23:23:14] ERROR [django.request:135] Internal Server Error: /devices/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\viewsets.py", line 95, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\mixins.py", line 40, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\generics.py", line 152, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\rest_framework\backends.py", line 51, in filter_queryset
+    filter_class = self.get_filter_class(view, queryset)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\rest_framework\backends.py", line 41, in get_filter_class
+    class AutoFilterSet(self.default_filter_set):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\filterset.py", line 90, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\filterset.py", line 335, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: d, n, a, m, e
+[16/Feb/2018 23:23:14] ERROR [django.server:124] "GET /devices/ HTTP/1.1" 500 120039
+[16/Feb/2018 23:23:16] ERROR [django.request:135] Internal Server Error: /devices/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\viewsets.py", line 95, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\mixins.py", line 40, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\generics.py", line 152, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\rest_framework\backends.py", line 51, in filter_queryset
+    filter_class = self.get_filter_class(view, queryset)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\rest_framework\backends.py", line 41, in get_filter_class
+    class AutoFilterSet(self.default_filter_set):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\filterset.py", line 90, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\filterset.py", line 335, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: d, n, a, m, e
+[16/Feb/2018 23:23:16] ERROR [django.server:124] "GET /devices/ HTTP/1.1" 500 120039
+[16/Feb/2018 23:27:47] ERROR [django.request:135] Internal Server Error: /devices/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\viewsets.py", line 95, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\mixins.py", line 40, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\generics.py", line 152, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\rest_framework\backends.py", line 51, in filter_queryset
+    filter_class = self.get_filter_class(view, queryset)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\rest_framework\backends.py", line 41, in get_filter_class
+    class AutoFilterSet(self.default_filter_set):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\filterset.py", line 90, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\filterset.py", line 335, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: d, n, a, m, e
+[16/Feb/2018 23:27:47] ERROR [django.server:124] "GET /devices/ HTTP/1.1" 500 119705
+[16/Feb/2018 23:27:54] ERROR [django.request:135] Internal Server Error: /devices/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\viewsets.py", line 95, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\mixins.py", line 40, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\generics.py", line 152, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\rest_framework\backends.py", line 51, in filter_queryset
+    filter_class = self.get_filter_class(view, queryset)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\rest_framework\backends.py", line 41, in get_filter_class
+    class AutoFilterSet(self.default_filter_set):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\filterset.py", line 90, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\filterset.py", line 335, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: d, n, a, m, e
+[16/Feb/2018 23:27:54] ERROR [django.server:124] "GET /devices/ HTTP/1.1" 500 119639
+[16/Feb/2018 23:27:56] ERROR [django.request:135] Internal Server Error: /devices/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\viewsets.py", line 95, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\mixins.py", line 40, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\generics.py", line 152, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\rest_framework\backends.py", line 51, in filter_queryset
+    filter_class = self.get_filter_class(view, queryset)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\rest_framework\backends.py", line 41, in get_filter_class
+    class AutoFilterSet(self.default_filter_set):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\filterset.py", line 90, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django_filters\filterset.py", line 335, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: d, n, a, m, e
+[16/Feb/2018 23:27:56] ERROR [django.server:124] "GET /devices/ HTTP/1.1" 500 119639
+[16/Feb/2018 23:41:16] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 9828
+[16/Feb/2018 23:41:17] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[16/Feb/2018 23:41:22] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 9828
+[16/Feb/2018 23:41:26] INFO [django.server:124] "GET /devices/?dname=test111 HTTP/1.1" 200 9934
+[16/Feb/2018 23:41:26] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[16/Feb/2018 23:41:57] INFO [django.server:124] "GET /devices/1/?dname=test111 HTTP/1.1" 200 10917
+[16/Feb/2018 23:41:57] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[16/Feb/2018 23:42:01] INFO [django.server:124] "GET /devices/1/ HTTP/1.1" 200 10797
+[16/Feb/2018 23:42:07] INFO [django.server:124] "GET /devices/1/?dname=t1 HTTP/1.1" 200 10877
+[16/Feb/2018 23:42:07] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[16/Feb/2018 23:42:10] INFO [django.server:124] "GET /devices/1/?dname=test111 HTTP/1.1" 200 10917
+[16/Feb/2018 23:42:11] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[16/Feb/2018 23:56:55] INFO [django.server:124] "GET / HTTP/1.1" 200 5213
+[16/Feb/2018 23:56:56] INFO [django.server:124] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+[16/Feb/2018 23:56:58] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 10863
+[16/Feb/2018 23:56:58] INFO [django.server:124] "GET /static/rest_framework/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[16/Feb/2018 23:57:01] INFO [django.server:124] "GET /devices/?dname=test111 HTTP/1.1" 200 10565
+[16/Feb/2018 23:57:13] INFO [django.server:124] "GET /devices/?dname=jiyeontest HTTP/1.1" 200 10591
+[17/Feb/2018 00:24:38] INFO [django.server:124] "GET /devices/?downer=jiyeon HTTP/1.1" 200 10969
+[17/Feb/2018 00:24:49] INFO [django.server:124] "GET /devices/?dkey=jiyeon HTTP/1.1" 200 10955
+[17/Feb/2018 00:28:42] INFO [django.server:124] "GET /devices/?dkey=jiyeon HTTP/1.1" 200 10955
+[17/Feb/2018 00:28:42] INFO [django.server:124] "GET /static/rest_framework/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[17/Feb/2018 00:31:40] INFO [django.server:124] "GET / HTTP/1.1" 200 5348
+[17/Feb/2018 00:31:43] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8119
+[17/Feb/2018 00:31:47] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8119
+[17/Feb/2018 00:31:48] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8119
+[17/Feb/2018 00:32:48] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8084
+[17/Feb/2018 00:32:50] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8084
+[17/Feb/2018 00:32:55] INFO [django.server:124] "GET / HTTP/1.1" 200 5313
+[17/Feb/2018 00:32:58] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 10194
+[17/Feb/2018 00:33:02] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8084
+[17/Feb/2018 00:35:58] INFO [django.server:124] "GET / HTTP/1.1" 200 5313
+[17/Feb/2018 00:35:59] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 00:36:00] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8864
+[17/Feb/2018 00:36:01] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 00:36:08] INFO [django.server:124] "POST /airstatus/ HTTP/1.1" 201 8995
+[17/Feb/2018 00:36:09] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 00:40:47] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8978
+[17/Feb/2018 00:40:48] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 00:40:49] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8978
+[17/Feb/2018 00:40:50] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 00:40:51] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8978
+[17/Feb/2018 00:40:52] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 00:40:53] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8978
+[17/Feb/2018 00:40:53] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 00:40:58] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8978
+[17/Feb/2018 00:40:59] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 00:40:59] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8978
+[17/Feb/2018 00:41:00] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 00:45:10] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8978
+[17/Feb/2018 00:45:10] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 00:45:11] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8978
+[17/Feb/2018 00:45:12] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 00:45:12] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8978
+[17/Feb/2018 00:45:13] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 00:45:14] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8978
+[17/Feb/2018 00:45:14] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 00:45:15] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8978
+[17/Feb/2018 00:45:15] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 00:49:09] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8978
+[17/Feb/2018 00:49:09] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 00:49:11] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8978
+[17/Feb/2018 00:49:11] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 00:49:14] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8978
+[17/Feb/2018 00:49:14] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 00:49:15] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8978
+[17/Feb/2018 00:49:15] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 00:49:16] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8978
+[17/Feb/2018 00:49:16] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 00:51:24] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8978
+[17/Feb/2018 00:51:25] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 00:51:26] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8978
+[17/Feb/2018 00:51:27] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 00:51:29] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8978
+[17/Feb/2018 00:51:29] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 00:51:30] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8978
+[17/Feb/2018 00:51:31] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 00:51:31] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8978
+[17/Feb/2018 00:51:32] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 00:51:32] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 8978
+[17/Feb/2018 00:51:33] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 00:55:08] INFO [django.server:124] "POST /airstatus/ HTTP/1.1" 201 38
+[17/Feb/2018 00:55:14] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 84
+[17/Feb/2018 00:55:18] INFO [django.server:124] "POST /airstatus/ HTTP/1.1" 201 38
+[17/Feb/2018 00:55:23] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 123
+[17/Feb/2018 00:56:36] INFO [django.server:124] "POST /airstatus/ HTTP/1.1" 201 38
+[17/Feb/2018 01:00:22] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 9305
+[17/Feb/2018 01:00:23] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 01:00:24] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 9305
+[17/Feb/2018 01:00:24] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 01:00:25] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 9305
+[17/Feb/2018 01:00:26] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 01:00:26] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 9305
+[17/Feb/2018 01:00:26] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 01:00:27] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 9305
+[17/Feb/2018 01:00:27] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 01:08:41] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 9305
+[17/Feb/2018 01:08:41] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 01:08:42] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 9305
+[17/Feb/2018 01:08:43] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 01:08:45] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 9305
+[17/Feb/2018 01:08:45] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 01:11:29] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 9305
+[17/Feb/2018 01:11:29] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 01:11:31] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 9305
+[17/Feb/2018 01:11:32] WARNING [django.server:124] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1733
+[17/Feb/2018 14:28:24] INFO [django.server:124] "GET / HTTP/1.1" 200 5313
+[17/Feb/2018 14:28:25] INFO [django.server:124] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+[17/Feb/2018 14:28:41] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 9305
+[17/Feb/2018 14:38:03] INFO [django.server:124] "GET / HTTP/1.1" 200 5313
+[17/Feb/2018 14:55:19] INFO [django.server:124] "GET / HTTP/1.1" 200 5313
+[17/Feb/2018 15:03:47] INFO [django.server:124] "GET / HTTP/1.1" 200 5313
+[17/Feb/2018 15:09:48] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 9305

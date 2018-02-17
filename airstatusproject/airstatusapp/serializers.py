@@ -1,6 +1,7 @@
 from django.contrib.auth.models import User, Group
 from .models import Person
 from .models import Device
+from .models import airstatus
 from rest_framework import serializers
 from rest_framework.authentication import SessionAuthentication, BasicAuthentication
 from rest_framework.permissions import IsAuthenticated
@@ -20,6 +21,11 @@ class DeviceSerializer(serializers.HyperlinkedModelSerializer):
         print(getattr(Device,'downer'))
         #setattr(Device, 'dkey', 'testktey')
 
+class AirSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = airstatus
+        fields = ('pm25', 'pm10', 'temperature')
+        
 
 
 

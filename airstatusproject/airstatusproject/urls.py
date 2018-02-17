@@ -7,10 +7,11 @@ from airstatusapp import views
 router = routers.DefaultRouter()
 #router.register(r'accounts/signup', views.PersonSignupView)
 router.register(r'devices', views.DeviceViewSet)
-
+router.register(r'airstatus', views.AirViewSet)
 urlpatterns = [
     url(r'^', include(router.urls)), 
     url(r'^account/',include('rest_auth.urls')),
     url(r'^account/signup/',include('rest_auth.registration.urls'))
+    
 ]
 
