@@ -25,9 +25,9 @@ class Device(models.Model):
     downer = models.CharField(max_length=30)
 
 class airstatus(models.Model):
-    pm25 = models.IntegerField()
-    pm10 = models.IntegerField()
-    temperature = models.IntegerField()
+    pm25 = models.CharField(max_length=30)
+    pm10 = models.CharField(max_length=30)
+    temperature = models.CharField(max_length=30)
 
 
 
