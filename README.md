@@ -24,6 +24,7 @@ Configuration
 Code Flow 
 ------------------------
 
-
+Contact ME 
+------------------------
 Jiyeon.Oh@studentpartner.com
 o(๑◕‿‿◕๑)o~♪
