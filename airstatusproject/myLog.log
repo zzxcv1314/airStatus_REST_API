@@ -4027,3 +4027,236 @@ django.core.exceptions.FieldError: Cannot resolve keyword 'Device' into field. C
 [19/Feb/2018 13:09:09] WARNING [django.request:152] Not Found: /device-air/
 [19/Feb/2018 13:09:09] WARNING [django.server:124] "GET /device-air/ HTTP/1.1" 404 4295
 [19/Feb/2018 13:09:15] INFO [django.server:124] "GET / HTTP/1.1" 200 5175
+[19/Feb/2018 13:49:57] INFO [django.server:124] "GET / HTTP/1.1" 200 5313
+[19/Feb/2018 13:50:02] INFO [django.server:124] "GET /airstatus/ HTTP/1.1" 200 38807
+[19/Feb/2018 13:55:48] INFO [django.server:124] "GET / HTTP/1.1" 200 5313
+[19/Feb/2018 13:55:51] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 9935
+[19/Feb/2018 13:55:57] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9152
+[19/Feb/2018 13:56:03] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 10168
+[19/Feb/2018 13:56:04] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 10168
+[19/Feb/2018 13:56:11] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 10168
+[19/Feb/2018 13:56:15] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9152
+[19/Feb/2018 13:56:18] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 10401
+[19/Feb/2018 13:56:24] WARNING [django.request:152] Not Found: /rest-auth/login/
+[19/Feb/2018 13:56:24] WARNING [django.server:124] "GET /rest-auth/login/ HTTP/1.1" 404 4126
+[19/Feb/2018 13:56:28] WARNING [django.server:124] "GET /account/login/ HTTP/1.1" 405 7999
+[19/Feb/2018 13:56:34] WARNING [django.server:124] "POST /account/login/ HTTP/1.1" 400 8085
+[19/Feb/2018 13:56:38] WARNING [django.server:124] "POST /account/login/ HTTP/1.1" 400 8083
+[19/Feb/2018 13:56:45] WARNING [django.server:124] "GET /account/signup/ HTTP/1.1" 405 7987
+[19/Feb/2018 13:56:58] ERROR [django.request:135] Internal Server Error: /account/signup/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\utils\decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\utils\decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_auth\registration\views.py", line 46, in dispatch
+    return super(RegisterView, self).dispatch(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_auth\registration\views.py", line 65, in create
+    user = self.perform_create(serializer)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_auth\registration\views.py", line 81, in perform_create
+    None)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\utils.py", line 183, in complete_signup
+    signal_kwargs=signal_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\utils.py", line 143, in perform_login
+    send_email_confirmation(request, user, signup=signup)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\utils.py", line 314, in send_email_confirmation
+    signup=signup)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\models.py", line 60, in send_confirmation
+    confirmation.send(request, signup=signup)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\models.py", line 166, in send
+    get_adapter(request).send_confirmation_mail(request, self, signup)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\adapter.py", line 444, in send_confirmation_mail
+    ctx)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\adapter.py", line 137, in send_mail
+    msg.send()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\mail\message.py", line 348, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\mail\backends\smtp.py", line 104, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\mail\backends\smtp.py", line 64, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\socket.py", line 724, in create_connection
+    raise err
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\socket.py", line 713, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다
+[19/Feb/2018 13:56:59] ERROR [django.server:124] "POST /account/signup/ HTTP/1.1" 500 192312
+[19/Feb/2018 13:57:10] WARNING [django.server:124] "GET /account/login/ HTTP/1.1" 405 7999
+[19/Feb/2018 13:57:21] INFO [django.server:124] "POST /account/login/ HTTP/1.1" 200 7592
+[19/Feb/2018 13:57:30] INFO [django.server:124] "GET /devices HTTP/1.1" 301 0
+[19/Feb/2018 13:57:30] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 10440
+[19/Feb/2018 13:57:35] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 9185
+[19/Feb/2018 13:58:00] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 8902
+[19/Feb/2018 13:58:03] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 8902
+[19/Feb/2018 13:58:07] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 10865
+[19/Feb/2018 13:58:37] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 10865
+[19/Feb/2018 13:58:40] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 8902
+[19/Feb/2018 14:00:20] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 9670
+[19/Feb/2018 14:00:30] WARNING [django.server:124] "GET /account/login/ HTTP/1.1" 405 7999
+[19/Feb/2018 14:00:34] WARNING [django.server:124] "GET /account/signup/ HTTP/1.1" 405 7987
+[19/Feb/2018 14:00:45] WARNING [django.server:124] "POST /account/signup/ HTTP/1.1" 400 8424
+[19/Feb/2018 14:00:46] ERROR [django.request:135] Internal Server Error: /account/signup/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\utils\decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\utils\decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_auth\registration\views.py", line 46, in dispatch
+    return super(RegisterView, self).dispatch(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_auth\registration\views.py", line 65, in create
+    user = self.perform_create(serializer)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_auth\registration\views.py", line 81, in perform_create
+    None)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\utils.py", line 183, in complete_signup
+    signal_kwargs=signal_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\utils.py", line 143, in perform_login
+    send_email_confirmation(request, user, signup=signup)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\utils.py", line 314, in send_email_confirmation
+    signup=signup)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\models.py", line 60, in send_confirmation
+    confirmation.send(request, signup=signup)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\models.py", line 166, in send
+    get_adapter(request).send_confirmation_mail(request, self, signup)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\adapter.py", line 444, in send_confirmation_mail
+    ctx)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\adapter.py", line 137, in send_mail
+    msg.send()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\mail\message.py", line 348, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\mail\backends\smtp.py", line 104, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\mail\backends\smtp.py", line 64, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\socket.py", line 724, in create_connection
+    raise err
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\socket.py", line 713, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다
+[19/Feb/2018 14:00:46] ERROR [django.server:124] "POST /account/signup/ HTTP/1.1" 500 192312
+[19/Feb/2018 14:00:46] ERROR [django.server:124] "POST /account/signup/ HTTP/1.1" 500 59
+[19/Feb/2018 14:01:00] ERROR [django.request:135] Internal Server Error: /account/signup/
+Traceback (most recent call last):
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\utils\decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\views\decorators\debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\utils\decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_auth\registration\views.py", line 46, in dispatch
+    return super(RegisterView, self).dispatch(*args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 494, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 454, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\views.py", line 491, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_framework\generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_auth\registration\views.py", line 65, in create
+    user = self.perform_create(serializer)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\rest_auth\registration\views.py", line 81, in perform_create
+    None)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\utils.py", line 183, in complete_signup
+    signal_kwargs=signal_kwargs)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\utils.py", line 143, in perform_login
+    send_email_confirmation(request, user, signup=signup)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\utils.py", line 314, in send_email_confirmation
+    signup=signup)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\models.py", line 60, in send_confirmation
+    confirmation.send(request, signup=signup)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\models.py", line 166, in send
+    get_adapter(request).send_confirmation_mail(request, self, signup)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\adapter.py", line 444, in send_confirmation_mail
+    ctx)
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\allauth\account\adapter.py", line 137, in send_mail
+    msg.send()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\mail\message.py", line 348, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\mail\backends\smtp.py", line 104, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\jiyeonO\Desktop\airstatus_rest\airvenv\lib\site-packages\django\core\mail\backends\smtp.py", line 64, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\socket.py", line 724, in create_connection
+    raise err
+  File "C:\Users\jiyeonO\AppData\Local\Programs\Python\Python36-32\lib\socket.py", line 713, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다
+[19/Feb/2018 14:01:00] ERROR [django.server:124] "POST /account/signup/ HTTP/1.1" 500 192330
+[19/Feb/2018 14:01:22] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 9670
+[19/Feb/2018 14:01:31] WARNING [django.server:124] "GET /account/login/ HTTP/1.1" 405 7999
+[19/Feb/2018 14:01:40] INFO [django.server:124] "POST /account/login/ HTTP/1.1" 200 7593
+[19/Feb/2018 14:01:43] INFO [django.server:124] "GET / HTTP/1.1" 200 5353
+[19/Feb/2018 14:01:45] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 9710
+[19/Feb/2018 14:01:48] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 8904
+[19/Feb/2018 14:01:57] INFO [django.server:124] "POST /devices/ HTTP/1.1" 201 8904
+[19/Feb/2018 14:02:00] INFO [django.server:124] "GET /devices/ HTTP/1.1" 200 10172
+[19/Feb/2018 14:34:13] INFO [django.server:124] "GET / HTTP/1.1" 200 5353
+[19/Feb/2018 14:34:22] WARNING [django.server:124] "GET /account/login/ HTTP/1.1" 405 8039

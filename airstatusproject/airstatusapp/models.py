@@ -7,6 +7,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.models import Group
 from rest_framework import serializers
 from django.utils.timezone import now
+import uuid
 
 
 
@@ -21,8 +22,8 @@ class Person(User):
 class Device(models.Model):
     dname = models.CharField(max_length=30)
     dlocation = models.CharField(max_length=30)
-    dkey = models.CharField(max_length=30,unique=True)
-    downer = models.CharField(max_length=30)
+    dkey = models.UUIDField(primary_key=True, default = uuid.uuid1, editable =False)
+    downer = models.CharField(max_length=30, editable=False)
 
 class airstatus(models.Model):
     pm25 = models.CharField(max_length=30)
