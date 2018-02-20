@@ -12,6 +12,8 @@ from django.utils.crypto import get_random_string
 import logging
 
 
+
+
 class DeviceSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         

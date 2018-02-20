@@ -4,8 +4,8 @@ Account <br/>
 계정
 ----------------
 ----------
-<b>POST</b> /account/signup/ <br>
-새로운 사용자를 생성한다. <br>
+<b>POST</b> /account/signup/ <br><br>
+새로운 사용자를 생성한다. <br><br>
 요청 : <br>
 ~~~
 POST /account/login HTTP/1.1
@@ -32,10 +32,10 @@ Vary: Accept
 }
 ~~~
 ------
-<b>POST</b> /account/login/ <br/>
-    시스템에 로그인 한다. <br/>로그인을 하게 되면 로그인 절차를 정상적으로 수행 했음을 표시하기 위해서 Session에 대한 token을 얻게 된다. <br>시스템의 대부분의 API는 사용자 데이터에 따라서 수행해야 하는 작업이기 때문에 token을 사용해야 한다. 
-    <br><br>
-    요청 : <br>
+<b>POST</b> /account/login/ <br/><br>
+시스템에 로그인 한다. <br/>로그인을 하게 되면 로그인 절차를 정상적으로 수행 했음을 표시하기 위해서 Session에 대한 key를 얻게 된다. <br>시스템의 대부분의 API는 사용자 데이터에 따라서 수행해야 하는 작업이기 때문에 key를 사용해야 한다. <br><br>
+
+요청 : <br>
 
 ~~~
 POST /account/login HTTP/1.1
@@ -64,8 +64,9 @@ Vary: Accept
 ~~~
 
 -------
-POST /account/logout <br>
-로그인 되어있는 계정을 로그아웃한다. 
+POST /account/logout <br><br>
+
+로그인 되어있는 계정을 로그아웃한다. <br><br>
 요청 : <br>
 ~~~
 POST /account/logout HTTP/1.1
@@ -89,15 +90,200 @@ Vary: Accept
 }
 ~~~
 
+------
+<b>POST</b> /account/password/change <br><br>
+사용자의 암호를 변경한다. <br><br>
+요청 : <br>
+~~~
+POST /account/logout HTTP/1.1
+HOST :
+Content-Type : application/json
+Accept: application/json 
+
+{
+    "new_password1": "test7test7",
+    "new_password2": "test7test7"
+}
+~~~
+응답 : <br>
+~~~
+HTTP 200 OK
+Allow: POST, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+{
+    "detail": "New password has been saved."
+}
+~~~
+
+-----
+
 
 Device <br/>
 기기 
 ----------------
+------
+<b>POST</b> /devices/ <br><br>
+기기를 등록한다. 기기의 이름과 장소를 설정할 수 있다.<br>
+기기별 키가 생성이 되며 이 키를 이용하여 각 기기별 공기정보를 저장할 수 있다.  <br><br>
+요청 : <br>
+~~~
+POST /account/logout HTTP/1.1
+HOST :
+Content-Type : application/json
+Accept: application/json 
+
+{
+    "dname": "testdev1",
+    "dlocation": "hwayangdong"
+}
+~~~
+응답 : <br>
+~~~
+HTTP 201 Created
+Allow: GET, POST, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+{
+    "dname": "testdev1",
+    "dlocation": "hwayangdong",
+    "dkey": "712a5b92-1604-11e8-803d-9c42967a3cc3",
+    "downer": "test6"
+}
+~~~
+
+-------
+<b> GET <b> /devices/ <br><br>
+
+모든 기기를 조회해 볼 수있다. 
+
+응답 : 
+~~~
+HTTP 200 OK
+Allow: GET, POST, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+[
+    {
+        "dname": "testdev1",
+        "dlocation": "hwayangdong",
+        "dkey": "712a5b92-1604-11e8-803d-9c42967a3cc3",
+        "downer": "AnonymousUser"
+    },
+    {
+        "dname": "testdev2",
+        "dlocation": "hwayang",
+        "dkey": "057a42e4-1606-11e8-8e56-9c42967a3cc3",
+        "downer": "test6"
+    }
+]
+~~~
+URI filtering을 이용하여 원하는 정보만 가져올 수 있다. 
+1. 특정 사용자가 소유한 기기 검색 
+<b>GET</b> /devices/?downer={userid} <br><br>
+
+응답 :
+~~~
+HTTP 200 OK
+Allow: GET, POST, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+[
+    {
+        "dname": "testdev2",
+        "dlocation": "hwayang",
+        "dkey": "057a42e4-1606-11e8-8e56-9c42967a3cc3",
+        "downer": "test6"
+    }
+]
+~~~
+
+2. 특정 위치의 기기만 조회해 볼 수 있다. 
+<b>GET<b> /devices/?dlocation={location} <br><br>
+응답 : 
+~~~
+HTTP 200 OK
+Allow: GET, POST, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+[
+    {
+        "dname": "testdev2",
+        "dlocation": "hwayang",
+        "dkey": "057a42e4-1606-11e8-8e56-9c42967a3cc3",
+        "downer": "test6"
+    }
+]
+~~~
+
+3. 기기 이름을 검색하여 정보를 가져온다. 
+<b> GET</b> /devices/?dname={devname} <br><br>
+응답 : 
+~~~
+HTTP 200 OK
+Allow: GET, POST, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+[
+    {
+        "dname": "testdev1",
+        "dlocation": "hwayangdong",
+        "dkey": "712a5b92-1604-11e8-803d-9c42967a3cc3",
+        "downer": "AnonymousUser"
+    }
+]
+~~~
+
 
 Airstatus <br/>
 공기 상태 
 ----------------
+----
+<b>POST </b> /airstatus/ <br><br>
 
+디바이스에서 공기 정보를 업로드 한다. 
+
+
+요청 : 
+~~~
+POST /account/login HTTP/1.1
+Host : 
+Content-Type : application/json
+Accept: application/json
+
+{
+    "pm25": "5",
+    "pm10": "5",
+    "temperature": "5",
+    "devicekey": "a83c92fa-1546-11e8-86cb-9c42967a3cc3"
+}
+~~~
+
+응답 : 
+~~~
+HTTP 201 Created
+Allow: GET, POST, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+{
+    "pm25": "5",
+    "pm10": "5",
+    "temperature": "5",
+    "devicekey": "a83c92fa-1546-11e8-86cb-9c42967a3cc3"
+}
+
+~~~
+----
+<b>GET </b> /airstatus/ <br><br>
+
+업로드 되어있는 공기정보를 모두 보여준다. 
 
 
     
