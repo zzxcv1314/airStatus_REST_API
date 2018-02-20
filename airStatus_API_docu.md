@@ -64,7 +64,7 @@ Vary: Accept
 ~~~
 
 -------
-POST /account/logout <br><br>
+<b>POST</b> /account/logout <br><br>
 
 로그인 되어있는 계정을 로그아웃한다. <br><br>
 요청 : <br>
@@ -155,7 +155,7 @@ Vary: Accept
 ~~~
 
 -------
-<b> GET <b> /devices/ <br><br>
+<b> GET </b> /devices/ <br><br>
 
 모든 기기를 조회해 볼 수있다. 
 
@@ -184,7 +184,6 @@ Vary: Accept
 URI filtering을 이용하여 원하는 정보만 가져올 수 있다. 
 1. 특정 사용자가 소유한 기기 검색 
 <b>GET</b> /devices/?downer={userid} <br><br>
-
 응답 :
 ~~~
 HTTP 200 OK
@@ -284,6 +283,138 @@ Vary: Accept
 <b>GET </b> /airstatus/ <br><br>
 
 업로드 되어있는 공기정보를 모두 보여준다. 
+
+응답 : 
+~~~
+HTTP 200 OK
+Allow: GET, POST, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+[
+    {
+        "pm25": "aa",
+        "pm10": "aa",
+        "temperature": "aa",
+        "devicekey": null
+    },
+    {
+        "pm25": "aa",
+        "pm10": "aa",
+        "temperature": "aa",
+        "devicekey": null
+    },
+    {
+        "pm25": "9",
+        "pm10": "10",
+        "temperature": "33",
+        "devicekey": null
+    },
+    {
+        "pm25": "10",
+        "pm10": "11",
+        "temperature": "33",
+        "devicekey": null
+    }
+]
+~~~
+
+URI filtering을 이용하여 원하는 정보만 가져올 수 있다. 
+1. 해당 device에서 업로드 한 공기 정보 조회하기 
+<b> GET </b> /airstatus/?devicekey={devicekey} 
+응답 : 
+~~~
+HTTP 200 OK
+Allow: GET, POST, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+[
+    {
+        "pm25": "10",
+        "pm10": "11",
+        "temperature": "33",
+        "devicekey": "a83c92fa-1546-11e8-86cb-9c42967a3cc3"
+    },
+    {
+        "pm25": "7",
+        "pm10": "7",
+        "temperature": "33",
+        "devicekey": "a83c92fa-1546-11e8-86cb-9c42967a3cc3"
+    },
+    {
+        "pm25": "10",
+        "pm10": "11",
+        "temperature": "33",
+        "devicekey": "a83c92fa-1546-11e8-86cb-9c42967a3cc3"
+    },
+    {
+        "pm25": "10",
+        "pm10": "11",
+        "temperature": "33",
+        "devicekey": "a83c92fa-1546-11e8-86cb-9c42967a3cc3"
+    }
+]
+~~~
+2. 해당 공기 정보에 해당하는 결과만 보기 <br>
+
+<b> GET </b> /airstatus/?pm25={10} <br>
+응답 : 
+~~~
+HTTP 200 OK
+Allow: GET, POST, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+[
+    {
+        "pm25": "10",
+        "pm10": "11",
+        "temperature": "33",
+        "devicekey": null
+    }
+]
+~~~
+
+<b> GET </b> /airstatus/?pm10={10} <br>
+응답 :
+~~~
+HTTP 200 OK
+Allow: GET, POST, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+[
+    {
+        "pm25": "9",
+        "pm10": "10",
+        "temperature": "33",
+        "devicekey": null
+    }
+]
+~~~
+<b> GET </b> /airstatus/?temperature={33} <br>
+응답 : 
+~~~
+HTTP 200 OK
+Allow: GET, POST, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+[
+    {
+        "pm25": "9",
+        "pm10": "10",
+        "temperature": "33",
+        "devicekey": null
+    }
+]
+~~~
+
+
+
+
+
 
 
     
