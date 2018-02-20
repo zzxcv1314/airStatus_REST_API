@@ -33,4 +33,7 @@ class DeviceViewSet(NestedViewSetMixin, ModelViewSet):
 class AirViewSet(NestedViewSetMixin, ModelViewSet):
     queryset = airstatus.objects.all()
     serializer_class =  AirSerializer
+
+    filter_backends = (DjangoFilterBackend,)
+    filter_fields = ('devicekey',)
     

@@ -29,6 +29,7 @@ class airstatus(models.Model):
     pm25 = models.CharField(max_length=30)
     pm10 = models.CharField(max_length=30)
     temperature = models.CharField(max_length=30)
+    devicekey = models.CharField(max_length=60, null=True)
 
 
 

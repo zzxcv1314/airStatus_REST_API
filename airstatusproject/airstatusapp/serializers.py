@@ -24,7 +24,7 @@ class DeviceSerializer(serializers.HyperlinkedModelSerializer):
 class AirSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = airstatus
-        fields = ('pm25', 'pm10', 'temperature')
+        fields = ('pm25', 'pm10', 'temperature','devicekey')
         
 
 

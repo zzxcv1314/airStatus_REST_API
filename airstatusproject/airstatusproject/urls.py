@@ -4,9 +4,7 @@ from airstatusapp import views
 from rest_framework_extensions.routers import NestedRouterMixin
 
 
-# Create your views here.
-
-    
+# Create your views here.    
 
 router = routers.DefaultRouter()
 #router.register(r'accounts/signup', views.PersonSignupView)
