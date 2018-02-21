@@ -25,7 +25,7 @@ class DeviceViewSet(NestedViewSetMixin, ModelViewSet):
     serializer_class = DeviceSerializer
     filter_backends = (DjangoFilterBackend,)
     
-    filter_fields = ('dname', 'downer', 'dlocation')
+    filter_fields = ('dname', 'downer', 'dlocation', 'id',)
     def perform_create(self, serializer):
         #serializer.save(dkey = 'abcd')
         serializer.save(downer = str(self.request.user))
@@ -35,5 +35,5 @@ class AirViewSet(NestedViewSetMixin, ModelViewSet):
     serializer_class =  AirSerializer
 
     filter_backends = (DjangoFilterBackend,)
-    filter_fields = ('devicekey', 'pm25','pm10','temperature',)
+    filter_fields = ('devicekey', 'pm25','pm10','temperature','id',)
     

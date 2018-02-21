@@ -118,7 +118,56 @@ Vary: Accept
 ~~~
 
 -----
+<b>GET </b> /account/user/ <br><br>
+자신의 계정 정보를 조회할 수 있다. 
+응답 : 
+~~~
+HTTP 200 OK
+Allow: GET, PUT, PATCH, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
 
+{
+    "pk": 1,
+    "username": "test1",
+    "email": "test1@test.com",
+    "first_name": "",
+    "last_name": ""
+}
+~~~
+
+<b>PUT </b> /account/user/<br><br>
+자신의 계정 정보를 수정할 수 있다. <br>
+요청 : <br>
+~~~
+POST /account/logout HTTP/1.1
+HOST :
+Content-Type : application/json
+Accept: application/json 
+
+{
+    "pk": 1,
+    "username": "test2",
+    "email": "test1@test.com",
+    "first_name": "testfirst",
+    "last_name": "testlast"
+}
+~~~
+응답 : 
+~~~
+HTTP 200 OK
+Allow: GET, PUT, PATCH, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+{
+    "pk": 1,
+    "username": "test2",
+    "email": "test1@test.com",
+    "first_name": "",
+    "last_name": ""
+}
+~~~
 
 Device <br/>
 기기 
@@ -181,8 +230,8 @@ Vary: Accept
     }
 ]
 ~~~
-URI filtering을 이용하여 원하는 정보만 가져올 수 있다. 
-1. 특정 사용자가 소유한 기기 검색 
+<b>URI filtering을 이용하여 원하는 정보만 가져올 수 있다. </b> 
+1. 특정 사용자가 소유한 기기 검색 <br/>
 <b>GET</b> /devices/?downer={userid} <br><br>
 응답 :
 ~~~
@@ -201,8 +250,8 @@ Vary: Accept
 ]
 ~~~
 
-2. 특정 위치의 기기만 조회해 볼 수 있다. 
-<b>GET<b> /devices/?dlocation={location} <br><br>
+2. 특정 위치의 기기만 조회해 볼 수 있다. <br/>
+<b>GET</b> /devices/?dlocation={location} <br><br>
 응답 : 
 ~~~
 HTTP 200 OK
@@ -220,7 +269,7 @@ Vary: Accept
 ]
 ~~~
 
-3. 기기 이름을 검색하여 정보를 가져온다. 
+3. 기기 이름을 검색하여 정보를 가져온다. <br/>
 <b> GET</b> /devices/?dname={devname} <br><br>
 응답 : 
 ~~~
@@ -238,6 +287,7 @@ Vary: Accept
     }
 ]
 ~~~
+
 
 
 Airstatus <br/>
@@ -412,7 +462,15 @@ Vary: Accept
 ~~~
 
 
+------
+<b>DELETE</b> /airstatus/{id} <br><br>
 
+등록된 공기정보를 삭제한다.<br>
+해당 정보의 id field를 이용하여 등록된 공기정보를 삭제할 수 있다. <br>
+요청 : 
+~~~
+
+~~~
 
 
 

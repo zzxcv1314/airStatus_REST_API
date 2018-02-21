@@ -18,7 +18,7 @@ class DeviceSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         
         model = Device 
-        fields = ('dname','dlocation','dkey','downer')
+        fields = ('dname','dlocation','dkey','downer', 'id')
         setattr(Device, 'downer', User.username)
         print(getattr(Device,'downer'))
         #setattr(Device, 'dkey', 'testktey')
@@ -26,7 +26,7 @@ class DeviceSerializer(serializers.HyperlinkedModelSerializer):
 class AirSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = airstatus
-        fields = ('pm25', 'pm10', 'temperature','devicekey')
+        fields = ('pm25', 'pm10', 'temperature','devicekey','id')
         
 
 
