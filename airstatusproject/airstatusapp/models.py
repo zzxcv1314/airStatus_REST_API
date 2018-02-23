@@ -25,7 +25,7 @@ class Person(User):
 class Device(models.Model):
     dname = models.CharField(max_length=30)
     dlocation = models.CharField(max_length=30)
-    dkey = models.UUIDField(primary_key=True, default = uuid.uuid1, editable =False)
+    dkey = models.UUIDField(default = uuid.uuid1, editable =False)
     #dkey를 primary키로 사용한다. 
     downer = models.CharField(max_length=30, editable=False)
     #non-editable하게 설계한다. 현재 로그인중인 사용자의 ID값이 들어가게 됨. 
