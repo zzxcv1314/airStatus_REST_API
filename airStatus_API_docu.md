@@ -8,7 +8,7 @@ Account <br/>
 새로운 사용자를 생성한다. <br><br>
 요청 : <br>
 ~~~
-POST /account/login HTTP/1.1
+POST /account/signup HTTP/1.1
 Host : 
 Content-Type : application/json
 Accept: application/json
@@ -95,7 +95,7 @@ Vary: Accept
 사용자의 암호를 변경한다. <br><br>
 요청 : <br>
 ~~~
-POST /account/logout HTTP/1.1
+POST /account/password/change HTTP/1.1
 HOST :
 Content-Type : application/json
 Accept: application/json 
@@ -119,7 +119,7 @@ Vary: Accept
 
 -----
 <b>GET </b> /account/user/ <br><br>
-자신의 계정 정보를 조회할 수 있다. 
+자신의 계정 정보를 조회할 수 있다. <br><br>
 응답 : 
 ~~~
 HTTP 200 OK
@@ -137,10 +137,10 @@ Vary: Accept
 ~~~
 
 <b>PUT </b> /account/user/<br><br>
-자신의 계정 정보를 수정할 수 있다. <br>
+자신의 계정 정보를 수정할 수 있다. <br><br>
 요청 : <br>
 ~~~
-POST /account/logout HTTP/1.1
+PUT /account/user/ HTTP/1.1
 HOST :
 Content-Type : application/json
 Accept: application/json 
@@ -178,7 +178,7 @@ Device <br/>
 기기별 키가 생성이 되며 이 키를 이용하여 각 기기별 공기정보를 저장할 수 있다.  <br><br>
 요청 : <br>
 ~~~
-POST /account/logout HTTP/1.1
+POST /devices/ HTTP/1.1
 HOST :
 Content-Type : application/json
 Accept: application/json 
@@ -231,7 +231,7 @@ Vary: Accept
 ]
 ~~~
 <b>URI filtering을 이용하여 원하는 정보만 가져올 수 있다. </b> 
-1. 특정 사용자가 소유한 기기 검색 <br/>
+1. 특정 사용자가 소유한 기기 검색 <br/><br/>
 <b>GET</b> /devices/?downer={userid} <br><br>
 응답 :
 ~~~
@@ -250,7 +250,7 @@ Vary: Accept
 ]
 ~~~
 
-2. 특정 위치의 기기만 조회해 볼 수 있다. <br/>
+2. 특정 위치의 기기만 조회해 볼 수 있다. <br/><br/>
 <b>GET</b> /devices/?dlocation={location} <br><br>
 응답 : 
 ~~~
@@ -269,7 +269,7 @@ Vary: Accept
 ]
 ~~~
 
-3. 기기 이름을 검색하여 정보를 가져온다. <br/>
+3. 기기 이름을 검색하여 정보를 가져온다. <br/><br>
 <b> GET</b> /devices/?dname={devname} <br><br>
 응답 : 
 ~~~
@@ -288,7 +288,87 @@ Vary: Accept
 ]
 ~~~
 
+<b>ID값을 이용하여 해당 정보를 사용할 수 있다. </b>
 
+1. 해당 ID 값의 기기 정보를 조회한다. <br/><br>
+<b> GET</b> /devices/{id} <br><br>
+
+응답 : 
+~~~
+HTTP 200 OK
+Allow: GET, PUT, PATCH, DELETE, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+{
+    "dname": "testdev1",
+    "dlocation": "testdev1",
+    "dkey": "c1dc3ec8-1844-11e8-88c9-e82f16670691",
+    "downer": "AnonymousUser",
+    "id": 1
+}
+~~~
+
+2. 해당 ID 값의 기기 정보를 수정한다. <br/><br>
+<b> PUT </b> /deviecs/{id} <br><br>
+
+요청 : 
+~~~
+PUT /devices/{id} HTTP/1.1
+HOST :
+Content-Type : application/json
+Accept: application/json 
+
+{
+    "dname": "testdev1",
+    "dlocation": "testdev2",
+    "dkey": "c1dc3ec8-1844-11e8-88c9-e82f16670691",
+    "downer": "AnonymousUser",
+    "id": 1
+}
+~~~
+응답 : 
+~~~
+HTTP 200 OK
+Allow: GET, PUT, PATCH, DELETE, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+{
+    "dname": "testdev1",
+    "dlocation": "testdev2",
+    "dkey": "c1dc3ec8-1844-11e8-88c9-e82f16670691",
+    "downer": "AnonymousUser",
+    "id": 1
+}
+~~~
+3. 해당 ID 값의 기기 정보를 삭제한다 <br><br>
+<b> DELETE </b> /devices/{id} 
+
+요청 : 
+~~~
+DELETE /devices/{id}
+Host : 
+Content-Type : application/json
+Accept: application/json
+
+{
+    "dname": "testdev1",
+    "dlocation": "testdev2",
+    "dkey": "c1dc3ec8-1844-11e8-88c9-e82f16670691",
+    "downer": "AnonymousUser",
+    "id": 1
+}
+~~~
+
+응답 : 
+~~~
+HTTP 204 No Content
+Allow: GET, PUT, PATCH, DELETE, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+~~~
 
 Airstatus <br/>
 공기 상태 
@@ -369,7 +449,7 @@ Vary: Accept
 ]
 ~~~
 
-URI filtering을 이용하여 원하는 정보만 가져올 수 있다. 
+<b>URI filtering을 이용하여 원하는 정보만 가져올 수 있다.</b> 
 1. 해당 device에서 업로드 한 공기 정보 조회하기 
 <b> GET </b> /airstatus/?devicekey={devicekey} 
 응답 : 
@@ -466,15 +546,110 @@ Vary: Accept
 <b>DELETE</b> /airstatus/{id} <br><br>
 
 등록된 공기정보를 삭제한다.<br>
-해당 정보의 id field를 이용하여 등록된 공기정보를 삭제할 수 있다. <br>
+해당 정보의 id field를 이용하여 등록된 공기정보를 삭제할 수 있다. <br><br>
 요청 : 
 ~~~
+DELETE /airstatus/{id} HTTP/1.1
+Host : 
+Content-Type : application/json
+Accept: application/json
 
+{
+    "pm25": "10",
+    "pm10": "10",
+    "temperature": "10",
+    "devicekey": "testdev1key",
+    "id": 1
+}
+~~~
+응답 : 
+~~~
+HTTP 204 No Content
+Allow: GET, PUT, PATCH, DELETE, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
 ~~~
 
+<b>ID값을 이용하여 해당 정보를 사용할 수 있다. </b>
 
-4
+1. 해당 ID 값의 기기 정보를 조회한다. <br/><br>
+<b> GET</b> /airstatus/{id} <br><br>
 
-    
+응답 : 
+~~~
+HTTP 201 Created
+Allow: GET, POST, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+{
+    "pm25": "10",
+    "pm10": "10",
+    "temperature": "10",
+    "devicekey": "testtesttest",
+    "id": 2
+}
+~~~
+
+2. 해당 ID 값의 기기 정보를 수정한다. <br/><br>
+<b> PUT </b> /airstatus/{id} <br><br>
+
+요청 : 
+~~~
+PUT /airstatus/{id} HTTP/1.1
+HOST :
+Content-Type : application/json
+Accept: application/json 
+
+{
+    "pm25": "20",
+    "pm10": "10",
+    "temperature": "10",
+    "devicekey": "testtesttest",
+    "id": 2
+}
+
+~~~
+응답 : 
+~~~
+HTTP 200 OK
+Allow: GET, PUT, PATCH, DELETE, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+{
+    "pm25": "20",
+    "pm10": "10",
+    "temperature": "10",
+    "devicekey": "testtesttest",
+    "id": 2
+}
+~~~
+3. 해당 ID 값의 공기 정보를 삭제한다 <br><br>
+<b> DELETE </b> /airstatus/{id} 
+
+요청 : 
+~~~
+DELETE /airstatus/{id}
+Host : 
+Content-Type : application/json
+Accept: application/json
+
+{
+    "pm25": "20",
+    "pm10": "10",
+    "temperature": "10",
+    "devicekey": "testtesttest",
+    "id": 2
+}
+~~~
+
+응답 : 
+~~~
+HTTP 204 No Content
+Allow: GET, PUT, PATCH, DELETE, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+~~~
     
 
