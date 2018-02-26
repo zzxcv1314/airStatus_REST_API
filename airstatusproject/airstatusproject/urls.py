@@ -1,9 +1,10 @@
 from django.conf.urls import url, include
+from django.contrib import admin
 from rest_framework import routers
 from airstatusapp import views
 from rest_framework_extensions.routers import NestedRouterMixin
 
-
+'''
 # Create your views here.    
 
 #defalut router를 사용한다. 
@@ -17,4 +18,15 @@ urlpatterns = [
     url(r'^account/signup/',include('rest_auth.registration.urls')) #rest-auth.registration 은 account/signup/ url로 연결하여 계정 관리 기능을 제공한다. 
     
 ]
+
+'''
+
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    url(r'', include('airstatusapp.urls')),
+]
+
+
+
+
 

@@ -11,11 +11,12 @@ from django_filters.rest_framework import DjangoFilterBackend
 from django_filters import rest_framework as filters
 from rest_framework import generics
 from rest_framework_extensions.mixins import NestedViewSetMixin
-
-#from .serializers import PersonSerializer
-#from .serializers import DeviceSerializer
+from django.shortcuts import render
 
 #user에 관한 Viewset은 설계하지 않는다. rest auth 제공 viewset사용
+
+def post_list(request):
+    return render(request, 'airstatusapp/post_list.html', {})
 
 #device viewset 
 class DeviceViewSet(NestedViewSetMixin, ModelViewSet):
@@ -39,4 +40,5 @@ class AirViewSet(NestedViewSetMixin, ModelViewSet):
     filter_backends = (DjangoFilterBackend,) #url filtering을 위한 framework
     filter_fields = ('devicekey', 'pm25','pm10','temperature','id',)
     #filtering시 사용할 field들. 
-    
+
+

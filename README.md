@@ -14,7 +14,7 @@ Useful Documents
 
 Deploy Environment
 ------------------------
-* webapp on Azure
+
 
 
 Configuration
@@ -26,5 +26,5 @@ Code Flow
 
 Contact ME 
 ------------------------
-Jiyeon.Oh@studentpartner.com
+Jiyeon.Oh@studentpartner.com <br>
 o(๑◕‿‿◕๑)o~♪
