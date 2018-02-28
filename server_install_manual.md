@@ -2,9 +2,8 @@ airStatus_REST_API
 ===================
 SERVER INSTALLATION MANUAL
 ----------------
-----------
 <b> Installing Raspnerry PI OS </b>
-1. 라즈베리 파이 OS 설치하기 
+1. 라즈베리 파이 OS 설치하기 <br>
 https://www.raspberrypi.org/documentation/installation/installing-images/README.md
 --------
 <b> How to setup your Raspberry Pi with Django.</b>
@@ -39,27 +38,9 @@ export WORKON_HOME=~/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 ~~~
 
-2. 가상환경 만들기 
-위의 과정을 잘 따라 했다면 virtualenvwrapper.sh 내에 있는 함수인 mkvirtualenv함수를 사용할 수 있다. 
+2. github에서 프로젝트 불러오기 
 ~~~
-mkvirtualenv {{가상환경 이름}}
-~~~
-myvenv 라는 이름의 가상환경이 설치되고 그 가상환경을 사용할 수 있게(workon)된다. 
-~~~
-mkvirtualenv myvenv
-which python 
-~~~
-명령어를 실행했을 때 아래와 같은 경로로 나오면 제대로 잘 된 것이다. 
-~~~
-/home/user_name/.virtualenvs/py2/bin/python
-~~~
-가상환경에서 나가려면
-~~~
-$ deactivate
-~~~
-다시 들어가려면
-~~~
-$ workon py2
+git clone https://github.com/zzxcv1314/airStatus_REST_API
 ~~~
 
 3. 쟝고(Django)설치 
@@ -67,16 +48,20 @@ $ workon py2
 ~~~
 sudo pip install django 
 ~~~
+
 프로젝트 생성
+
 ~~~
 python manage.py startapp {{examapp}}
 ~~~
+
 테스트 
 ~~~
 cd {{examapp}}
 python manage.py migrate
 python manage.py runserver
 ~~~
+
 http://rpi_ip_address:8000/주소로 접속해서 확인. 
 
 
