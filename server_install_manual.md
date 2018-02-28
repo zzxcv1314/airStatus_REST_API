@@ -77,7 +77,7 @@ cd {{examapp}}
 python manage.py migrate
 python manage.py runserver
 ~~~
-
+http://rpi_ip_address:8000/주소로 접속해서 확인. 
 
 
 
