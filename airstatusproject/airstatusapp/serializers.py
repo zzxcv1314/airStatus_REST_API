@@ -19,6 +19,7 @@ class DeviceSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Device #Device model을 사용한다.  
         fields = ('dname','dlocation','dkey','downer', 'id') #사용할 field 
+        
         setattr(Device, 'downer', User.username) 
         #현재 로그인중인 User 의 username을 가져와 Device model의 downer field에 넣어준다. 
         #print(getattr(Device,'downer'))
