@@ -62,8 +62,7 @@ def devicesview(request):
     })
 
 
-def airstatusdetail(request):
-    
+
 
 class DeviceCreateViewSet(mixins.CreateModelMixin,viewsets.GenericViewSet):
     #setattr(Device, 'dkey', 'testkey')
