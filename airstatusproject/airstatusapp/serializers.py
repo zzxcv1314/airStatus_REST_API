@@ -24,6 +24,8 @@ class DeviceSerializer(serializers.HyperlinkedModelSerializer):
         #print(getattr(Device,'downer'))
         #setattr(Device, 'dkey', 'testktey')
 
+        
+
 #airstatus Serializer 설계 
 class AirSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:

@@ -1,0 +1,97 @@
+<!doctype html>
+{% load staticfiles %}
+
+<html lang="en">
+    
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>airstatus</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'cover.css' %}" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead">
+        <div class="inner">
+          <h3 class="masthead-brand">airstatus</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="/main">Home</a>
+            <a class="nav-link" href="/account/login">login</a>
+            <a class="nav-link" href="/account/signup">signin</a>
+            
+            
+          </nav>
+        </div>
+
+      </header>
+<br><br><br><br> <h1>기기등록하기</h1>
+<br><br><br><br>
+      <main class="inner cover">
+            <form action="/devices/" method="POST" class="form-horizontal">
+        <div>
+            <label class="col-sm-2 control-label ">
+                dname
+            </label>
+            <div class="col-sm-10">
+                <input name="dname" class="form-control" type="text"   >
+            </div>
+        </div>
+        <br><br><br>
+        <div>
+            <label class="col-sm-2 control-label ">
+                dloca
+            </label>
+            <div class="col-sm-10">
+                <input name="dlocation" class="form-control" type="text"   >
+            </div>
+        </div>
+        
+        <br><br><br>
+        
+        <div>
+            <button class="btn btn-primary" title="Make a POST request on the Device List resource">POST</button>
+        </div>
+        
+            
+            </form>
+        
+        </div>                     
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+        </div>
+      </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="{% static 'popper.min.js' %}"></script>
+    <script src="{% static 'bootstrap.min.js' %}"></script>
+  </body>
+</html>

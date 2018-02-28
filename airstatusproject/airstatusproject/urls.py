@@ -4,6 +4,7 @@ from rest_framework import routers
 from airstatusapp import views
 from rest_framework_extensions.routers import NestedRouterMixin
 
+
 '''
 # Create your views here.    
 
@@ -20,12 +21,26 @@ urlpatterns = [
 ]
 
 '''
+#defalut router를 사용한다. 
+router = routers.SimpleRouter()
+#router.register(r'accounts/signup', views.PersonSignupView)
+'''
+router.register(r'/devices/', views.DeviceViewSet) #deviceviewset은 devices/ url로 연결하여 사용한다. 
+router.register(r'/airstatus/', views.AirViewSet) #airviewset은 airstatus/ url로 연결하여 사용한다. 
+'''
+
 
 urlpatterns = [
+    
     url(r'^admin/', admin.site.urls),
-    url(r'', include('airstatusapp.urls')),
+    url(r'^', include('airstatusapp.urls')),
+    url(r'^account/', include('rest_auth.urls')),
+    url(r'^account/signup/', include('rest_auth.registration.urls')),
+    
+
 ]
 
+urlpatterns += router.urls
 
 
 
